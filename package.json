@@ -1,0 +1,23 @@
+{
+  "name": "aw2",
+  "version": "1.0.0",
+  "description": "Repositorio usado en clases",
+  "main": "index.mjs",
+  "scripts": {
+    "dev": "node index.mjs",
+    "escribir": "node escribirArchivo.mjs",
+    "lecturaApi": "node api.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodfaro/aw2-cmb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/rodfaro/aw2-cmb/issues"
+  },
+  "homepage": "https://github.com/rodfaro/aw2-cmb#readme"
+}

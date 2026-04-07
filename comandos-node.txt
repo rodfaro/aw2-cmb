@@ -1,0 +1,5 @@
+node -v //version de node
+npm -v //version de npm
+npm init -y //Creas el package.json
+
+npm run {nombre-Script} //ejecutas script del package.json
