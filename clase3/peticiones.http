@@ -1,0 +1,27 @@
+###el archivo peticiones.http es para hacer peticiones http, como get, post, put, delete, etc. Es una forma de probar las api sin necesidad de usar un cliente como postman o insomnia.
+###hay q instalar extension REST Client y en File -> Preferences -> Settings -> REST Client preview options a exchange
+
+### comentarios
+###--------------------------------
+# GET - pag ies21
+GET https://ies21.edu.ar/
+
+###-----------------------------
+# GET - productos
+GET https://69cbcb780b417a19e07b42c1.mockapi.io/api/v1/Productos
+###El get te da 3 partes, el get con la peticion, cabecera y el cuerpo
+
+###///
+GET http://localhost:3000/
+###
+# POST -
+POST http://localhost:3000/
+Content-Type: 'text/plain'
+
+Cabecera
+
+### PUT
+PUT http://localhost:3000/
+
+### DELETE
+PUT http://localhost:3000/
