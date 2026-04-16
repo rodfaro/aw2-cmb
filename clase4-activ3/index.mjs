@@ -10,13 +10,17 @@ try{
     const datos = await obtenerDatosAPI();
     const puerto = 3000
 
+    //obtener los usuarios  con  id < 10 y pasarlos a stringify
+    const datosFiltrados = datos.filter((usuario) => usuario.id < 10)
+    const usuariosFiltrados = JSON.stringify(datosFiltrados, null, 4)
+
     //escribir datos api y guardar local
     await escribirDatos(datos)
     
     //leer datos del archivo y se guarda en una variable const
     const datosUsuarios = await leerDatos();
 
-
+    
 
     //servidor
     const app = http.createServer((req, res) =>{
@@ -25,8 +29,9 @@ try{
                 res.statusCode = 200
                 res.end(datosUsuarios)
             }
-            else if (req.url === './usuarios/filtrados'){
-
+            else if (req.url === '/usuarios/filtrados'){
+                res.statusCode = 200
+                res.end(usuariosFiltrados) //en el res.end tiene que estar parseado a cadena. NO ACEPTA JSON
             }
             else{
                 res.statusCode = 404
@@ -41,6 +46,6 @@ try{
     
 }
 catch(e){
-    throw new Error(e)
+    console.error(e)
 }
     

@@ -6,7 +6,7 @@ async function obtenerDatosAPI(){
         return datosJSON
     }
     catch(e){
-        throw new Error(e)
+        console.error(e)
     }
     
 }
