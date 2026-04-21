@@ -1,0 +1,9 @@
+###
+
+GET http://192.169.0.132:3000
+
+###
+GET http://localhost:3000/usuarios
+
+###
+POST http://192.169.0.113:3000/
