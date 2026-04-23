@@ -1,0 +1,16 @@
+###
+
+GET http://localhost:3000
+
+###
+GET http://localhost:3000/usuarios
+
+###
+POST http://localhost:3000/productos
+Content-Type: application/json
+//Simula que mandamos datos del cliente al servidor
+{
+    "id": "6",
+    "nombre": "remeras",
+    "precio": 20000
+}

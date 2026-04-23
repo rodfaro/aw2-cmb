@@ -1,0 +1,11 @@
+// ExpressJS ---> framework de NodeJS para crear aplicaciones web y APIs de manera sencilla y rápida
+
+Lo instalamos desde npm que tiene librerias y frameworks en nuestro proyecto por consola
+npm i Express
+
+Creamos en la carpeta raiz un .gitignore para no subir la carpeta node_modules que no se suele subir
+por la cantidad de archivos
+
+PONIENDO npm i
+en la terminal al tirar un pull para actualizar todo, 
+descarga automaticamente las dependencias necesarios del proyecto
